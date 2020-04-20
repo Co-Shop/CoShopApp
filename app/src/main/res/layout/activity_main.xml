@@ -19,15 +19,55 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="291dp"
-        android:layout_height="78dp"
+        android:layout_width="290dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
         android:text="CO-OP SHOP"
         android:textSize="45dp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/circleImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="232dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:scrollHorizontally="false"
+        android:text="The shopping assistant you didn't know you needed."
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:text="GET STARTED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tagline"
+        app:layout_constraintBottom_toTopOf="@id/startinglogin"
+        tools:layout_editor_absoluteY="542dp"
+        android:background="@color/menuButtonColor"/>
+
+    <TextView
+        android:id="@+id/startinglogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="Already a member?"
+        android:textSize="18dp"
+        android:textColor="@color/textlinkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
