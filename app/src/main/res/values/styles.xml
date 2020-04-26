@@ -9,16 +9,21 @@
     </style>
 
     <style name="EditTextBox" parent="TextAppearance.AppCompat">
-        <solid android:color="#FFFFFF"/>
+        <solid android:color="#FFFFFF" />
 
-        <stroke
-            android:width="2dp"
-            android:color="#E7E7E7"
-            android:height="10dp"/>
+        <stroke android:width="2dp" android:height="10dp" android:color="#E7E7E7" />
 
-        <corners
-            android:radius="5dp"/>
+        <corners android:radius="5dp" />
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>
