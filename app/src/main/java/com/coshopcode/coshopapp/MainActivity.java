@@ -2,6 +2,7 @@ package com.coshopcode.coshopapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     public void onClickStartingSignupButton(View view)
     {
         //TODO: Move the Activity to the SignUp Page upon Login
+        Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
     }
 
     public void onClickStartingLoginButton(View view)
