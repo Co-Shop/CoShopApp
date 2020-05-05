@@ -11,11 +11,7 @@ import android.widget.TextView;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView title = findViewById(R.id.title);
-    CircleImageView imageView = findViewById(R.id.circleImageView);
-    TextView tagline = findViewById(R.id.tagline);
-    Button startingSignupButton = findViewById(R.id.startingSignup);
-    Button startingLoginButton = findViewById(R.id.startinglogin);
+
 
 
 
