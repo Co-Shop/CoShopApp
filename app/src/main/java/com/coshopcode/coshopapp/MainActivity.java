@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickStartingSignupButton(View view)
     {
-        //TODO: Move the Activity to the SignUp Page upon Login
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 
     public void onClickStartingLoginButton(View view)
     {
-        //TODO: Transfer to the Login Page.
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
 

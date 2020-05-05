@@ -19,4 +19,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="already_a_member">Already a member?</string>
+    <string name="tagline_eng">The shopping assistant you didn\'t know you needed.</string>
+    <string name="get_started_eng">GET STARTED</string>
+    <string name="co_op_shop_eng">CO-OP SHOP</string>
 </resources>
