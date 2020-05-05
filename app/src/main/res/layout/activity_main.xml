@@ -56,12 +56,12 @@
         tools:layout_editor_absoluteY="542dp"
         android:background="@color/menuButtonColor"/>
 
-    <Button
+     <Button
         android:id="@+id/startinglogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:linksClickable="true"
-        android:background="white"
+        android:background="#fff"
         android:text="@string/already_a_member"
         android:textSize="18dp"
         android:textColor="@color/textlinkColor"
