@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "617471738126",
+    "firebase_url": "https://coshopapp.firebaseio.com",
+    "project_id": "coshopapp",
+    "storage_bucket": "coshopapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617471738126:android:2387aea93bcbaaa250975f",
+        "android_client_info": {
+          "package_name": "com.coshopcode.coshopapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617471738126-m0up4gvv85ts9p0989vcl161if7o9b9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coshopcode.coshopapp",
+            "certificate_hash": "76a1b1512a56eda1b4495e27e68df2e8680bcd02"
+          }
+        },
+        {
+          "client_id": "617471738126-bl7ss5dftb0m8cahli1m22h20kp77j87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnOGmWKzI3-ox4ANZlzooTOSElRe2FiPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617471738126-bl7ss5dftb0m8cahli1m22h20kp77j87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
