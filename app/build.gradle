@@ -27,6 +27,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //spotbugs 'com.github.spotbugs:spotbugs:4.0.0'
+
     //CircleImageView Dependency
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
