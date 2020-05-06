@@ -17,4 +17,8 @@
     <string name="get_started">登録</string>
     <string name="co_op_shop">CO-OP SHOP</string>
     <string name="tagline">便利なお手伝いアプリ</string>
+    <string name="sign_up_to_co_op_shop">Sign Up to Co-Op Shop</string>
+    <string name="enter_your_password_hint">パスワードを入力してください</string>
+    <string name="re_enter_your_password">パスワードを再入力してください</string>
+    <string name="enter_your_e_mail">メールを入力してください</string>
 </resources>
