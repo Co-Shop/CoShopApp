@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoShopApp</string>
+    <string name="title_activity_login">サインイン</string>
+    <string name="prompt_email">メール</string>
+    <string name="prompt_password">パスワード</string>
+    <string name="action_sign_in">サインイン（または登録）</string>
+    <string name="action_sign_in_short">サインイン</string>
+    <string name="welcome">ようこそ</string>
+    <string name="invalid_username">無効なユーザー名です。</string>
+    <string name="invalid_password">無効なパスワード</string>
+    <string name="login_failed">ログイン失敗</string>
+    <string name="title_activity_sign_up">登録</string>
+    <string name="next">次</string>
+    <string name="previous">前</string>
+    <string name="already_a_member">アカウントを持っていますか</string>
+    <string name="get_started">登録</string>
+    <string name="co_op_shop">CO-OP SHOP</string>
+    <string name="tagline">便利なお手伝いアプリ</string>
+</resources>

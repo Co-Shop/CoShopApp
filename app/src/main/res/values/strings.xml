@@ -11,15 +11,15 @@
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
     <string name="already_a_member">Already a member?</string>
-    <string name="tagline_eng">The shopping assistant you didn\'t know you needed.</string>
-    <string name="get_started_eng">GET STARTED</string>
-    <string name="co_op_shop_eng">CO-OP SHOP</string>
+    <string name="tagline">The shopping assistant you didn\'t know you needed.</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="co_op_shop">CO-OP SHOP</string>
 </resources>
