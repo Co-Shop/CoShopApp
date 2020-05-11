@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import butterknife.BindView;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
-   @BindView(R.id.tagline) TextView tagline;
+   TextView tagline= findViewById(R.id.tagline);
 
 
 
