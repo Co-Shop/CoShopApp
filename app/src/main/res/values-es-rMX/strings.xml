@@ -4,7 +4,7 @@
     <string name="enter_your_password_hint">Ingresa su contranseña</string>
     <string name="re_enter_your_password">Reingersa su contraseña</string>
     <string name="enter_your_e_mail">Ingresa su email</string>
-    <string name="already_a_member">¿Ya sois usuario?</string>
+    <string name="already_a_member">¿Ya tienes una cuenta?</string>
     <string name="next">próximo</string>
     <string name="title_activity_sign_up">Registarte a CoShop</string>
     <string name="login_failed">La contraseña que ingresaste es incorrecta.</string>

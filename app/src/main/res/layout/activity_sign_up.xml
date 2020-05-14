@@ -72,4 +72,33 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signUpPasswordConfirm" />
+
+    <TextView
+        android:id="@+id/alreadymemberlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="26sp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/already_a_member"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerUser" />
+
+    <Button
+        android:id="@+id/signinbutton"
+        android:layout_width="142dp"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/title_activity_login"
+        android:textColor="@color/menuButtonColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alreadymemberlogin"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="onClickSignupToSignIn"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
