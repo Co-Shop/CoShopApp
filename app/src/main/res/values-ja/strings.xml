@@ -8,7 +8,7 @@
     <string name="action_sign_in_short">サインイン</string>
     <string name="welcome">ようこそ</string>
     <string name="invalid_username">無効なユーザー名です。</string>
-    <string name="invalid_password">無効なパスワード</string>
+    <string name="invalid_password">８字以上のパスワードが必要です。</string>
     <string name="login_failed">ログイン失敗</string>
     <string name="title_activity_sign_up">登録</string>
     <string name="next">次</string>
@@ -17,8 +17,9 @@
     <string name="get_started">登録</string>
     <string name="co_op_shop">CO-OP SHOP</string>
     <string name="tagline">便利なお手伝いアプリ</string>
-    <string name="sign_up_to_co_op_shop">Sign Up to Co-Op Shop</string>
+    <string name="sign_up_to_co_op_shop">CO-OP Shopに登録</string>
     <string name="enter_your_password_hint">パスワードを入力してください</string>
     <string name="re_enter_your_password">パスワードを再入力してください</string>
     <string name="enter_your_e_mail">メールを入力してください</string>
+    <string name="register_user">登録</string>
 </resources>

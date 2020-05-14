@@ -27,37 +27,49 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/enter_your_e_mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@id/signupPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signupPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signupTitle"
-        android:hint="@string/enter_your_e_mail"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/signupPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/enter_your_password_hint"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/signUpPasswordConfirm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEntry"
-        android:hint="@string/enter_your_password_hint"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/signUpPasswordConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:ems="10"
+        android:hint="@string/re_enter_your_password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/registerUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signupPassword"
-        android:importantForAutofill="no"
-        android:hint="@string/re_enter_your_password"/>
+        app:layout_constraintTop_toBottomOf="@id/signUpPasswordConfirm" />
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="292dp"
+        android:background="@color/menuButtonColor"
+        android:text="@string/register_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPasswordConfirm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

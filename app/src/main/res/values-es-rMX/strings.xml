@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoShopApp</string>
+    <string name="enter_your_password_hint">Ingresa su contranseña</string>
+    <string name="re_enter_your_password">Reingersa su contraseña</string>
+    <string name="enter_your_e_mail">Ingresa su email</string>
+    <string name="already_a_member">¿Ya sois usuario?</string>
+    <string name="next">próximo</string>
+    <string name="title_activity_sign_up">Registarte a CoShop</string>
+    <string name="login_failed">La contraseña que ingresaste es incorrecta.</string>
+    <string name="invalid_username">"No puedes usar eso "</string>
+    <string name="register_user">Registarte</string>
+    <string name="sign_up_to_co_op_shop">Registarte un usuario</string>
+    <string name="co_op_shop">CO-OP SHOP</string>
+    <string name="get_started">Registarte</string>
+    <string name="title_activity_login">Iniciar sesión</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="invalid_password">"Necesita ingresar 8 o más carácter. "</string>
+    <string name="welcome">¡Buenevida!</string>
+    <string name="action_sign_in">Inciar sesión o registarte</string>
+    <string name="action_sign_in_short">Incinar ses</string>
+    <string name="tagline">Utíl applicacíon que puede compar con.</string>
+    <string name="previous">anterior</string>
+</resources>

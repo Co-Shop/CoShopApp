@@ -14,11 +14,12 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="already_a_member">Already a member?</string>
-    <string name="tagline">The sho</string>
+    <string name="tagline">The shopping assistant you didn\'t know you needed</string>
     <string name="get_started">Get Started</string>
     <string name="co_op_shop">CO-OP SHOP</string>
     <string name="sign_up_to_co_op_shop">Sign Up to Co-Op Shop</string>
     <string name="enter_your_password_hint">Enter your password</string>
     <string name="re_enter_your_password">Re-enter your password</string>
     <string name="enter_your_e_mail">Enter your e-mail</string>
+    <string name="register_user">Register User</string>
 </resources>
