@@ -22,4 +22,7 @@
     <string name="re_enter_your_password">パスワードを再入力してください</string>
     <string name="enter_your_e_mail">メールを入力してください</string>
     <string name="register_user">登録</string>
+    <string name="donthaveaccount">アカウントお持ちではない方</string>
+    <string name="totheregisterpage">登録</string>
+    <string name="loginpagetitle">ログイン面</string>
 </resources>

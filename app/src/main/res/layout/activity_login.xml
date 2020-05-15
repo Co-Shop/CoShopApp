@@ -6,4 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+
+    <Button
+        android:id="@+id/signintosignuppage"
+        android:layout_width="150dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="84dp"
+        android:background="#fff"
+        android:fontFamily="@font/open_sans"
+        android:onClick="onClickSignInToSignUp"
+        android:text="@string/totheregisterpage"
+        android:textColor="@color/menuButtonColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notamembertext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/notamembertext"
+        android:layout_width="wrap_content"
+        android:layout_height="26sp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/donthaveaccount"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInUser" />
+
+    <Button
+        android:id="@+id/SignInUser"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="56dp"
+        android:background="#fff"
+        android:fontFamily="@font/open_sans"
+        android:onClick="onClickSignInUser"
+        android:text="@string/title_activity_login"
+        android:textColor="@color/menuButtonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpassword" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:textColor="#414141"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/loginemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/loginpagetitle" />
+
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:width="280dp"
+        android:height="44dp"
+        android:ems="10"
+        android:hint="@string/enter_your_e_mail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/loginpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTitle" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:width="280dp"
+        android:height="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/enter_your_password_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginemail" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

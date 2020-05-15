@@ -22,4 +22,7 @@
     <string name="action_sign_in_short">Incinar ses</string>
     <string name="tagline">Utíl applicacíon que puede compar con.</string>
     <string name="previous">anterior</string>
+    <string name="donthaveaccount">¿No tienes una cuenta?</string>
+    <string name="totheregisterpage">Registarte</string>
+    <string name="loginpagetitle">La pagina de Inciar sesión</string>
 </resources>

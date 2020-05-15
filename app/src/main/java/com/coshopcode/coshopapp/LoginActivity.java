@@ -2,7 +2,9 @@ package com.coshopcode.coshopapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,4 +30,19 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+
+
+
+
+    public void onClickSignInToSignUp(View view)
+    {
+        //TODO Take the User to the Sign Up Page
+        //Intent intent = new Intent(SignUpActivity.class)
+    }
+
+    public void onClickSignInUser(View view)
+    {
+        //TODO: Sign the User using Firebase Technology
+
+    }
 }

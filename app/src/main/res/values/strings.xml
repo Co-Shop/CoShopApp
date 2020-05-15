@@ -24,4 +24,7 @@
     <string name="re_enter_your_password">Re-enter your password</string>
     <string name="enter_your_e_mail">Enter your e-mail</string>
     <string name="register_user">Register User</string>
+    <string name="donthaveaccount">Don\'t have an account?</string>
+    <string name="totheregisterpage">Register</string>
+    <string name="loginpagetitle">Log in to Co-shop</string>
 </resources>
