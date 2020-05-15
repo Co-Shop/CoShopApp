@@ -37,7 +37,9 @@ public class LoginActivity extends AppCompatActivity {
     public void onClickSignInToSignUp(View view)
     {
         //TODO Take the User to the Sign Up Page
-        //Intent intent = new Intent(SignUpActivity.class)
+        //
+        Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
     }
 
     public void onClickSignInUser(View view)
