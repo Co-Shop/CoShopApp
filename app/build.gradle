@@ -27,11 +27,15 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+
+
     //spotbugs 'com.github.spotbugs:spotbugs:4.0.0'
 
     //CircleImageView Dependency
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     
+    //Facebook SDK Dependency
+    implementation 'com.facebook.android:facebook-login:[5,6)'
 
 
     implementation 'androidx.appcompat:appcompat:1.0.2'

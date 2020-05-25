@@ -12,6 +12,8 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="facebook_app_id" translatable="false">332036151117749</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb332036151117749</string>
 
     <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
     <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
