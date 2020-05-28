@@ -22,6 +22,7 @@ public class SignUpActivity extends AppCompatActivity
     EditText signUpPasswordText = findViewById(R.id.signupPassword);
     EditText signUpConfirmPasswordText = findViewById(R.id.signUpPasswordConfirm);
     ProgressBar progressBar = findViewById(R.id.signUpProgressBar);
+    String URL = "";
 
 
     @Override
@@ -80,6 +81,11 @@ public class SignUpActivity extends AppCompatActivity
 
                         }
                     });
+                }
+
+                else
+                {
+                    Toast.makeText(SignUpActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                 }
 
             }

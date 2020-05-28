@@ -27,6 +27,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //OKHTTP4
+    implementation "com.squareup.okhttp3:okhttp:4.7.2"
 
 
     //spotbugs 'com.github.spotbugs:spotbugs:4.0.0'
