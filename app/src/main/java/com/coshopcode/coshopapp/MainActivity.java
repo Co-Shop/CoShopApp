@@ -30,7 +30,7 @@ import okhttp3.OkHttp;
 public class MainActivity extends AppCompatActivity {
    TextView tagline= findViewById(R.id.tagline);
    String URL = "http://api.coshop.org/";
-   //TODO: Add the URL and use the Rest API to Log In and Register.
+
    private ConnectivityManager cManager;
    private ConnectivityManager.NetworkCallback mCallback;
    private AlertDialog mDialog;
