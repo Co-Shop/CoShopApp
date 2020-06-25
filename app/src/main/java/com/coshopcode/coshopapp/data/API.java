@@ -6,5 +6,9 @@ public interface API
 
     void loginUser(String email, String password);
 
+    void logoutUser();
+
+    void updatePassword(String password);
+
 
 }

@@ -26,6 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.OkHttp;
+import okhttp3.Request;
 
 public class MainActivity extends AppCompatActivity {
    TextView tagline= findViewById(R.id.tagline);
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         //Fixing the Tagline textview
         tagline.setElegantTextHeight(true);
         tagline.setSingleLine(false);
+
+        Request request = new Request.Builder().url(URL).build();
 
 
 
