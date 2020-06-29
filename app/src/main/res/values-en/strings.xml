@@ -25,4 +25,6 @@
     <string name="donthaveaccount">Don\'t have an account?</string>
     <string name="totheregisterpage">Register</string>
     <string name="loginpagetitle">Log in to Co-shop</string>
+    <string name="hide_e_mail">Hide E-Mail?</string>
+    <string name="get_the_newsletter">Get the Newsletter.</string>
 </resources>

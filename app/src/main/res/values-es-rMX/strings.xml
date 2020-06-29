@@ -25,4 +25,6 @@
     <string name="donthaveaccount">¿No tienes una cuenta?</string>
     <string name="totheregisterpage">Registarte</string>
     <string name="loginpagetitle">La pagina de Inciar sesión</string>
+    <string name="hide_e_mail">Hide E-Mail?</string>
+    <string name="get_the_newsletter">Get the Newsletter.</string>
 </resources>

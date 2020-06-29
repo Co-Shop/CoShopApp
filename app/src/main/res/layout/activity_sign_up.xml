@@ -6,85 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
 
+
     <TextView
         android:id="@+id/signupTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="@string/sign_up_to_co_op_shop"
         android:textAlignment="center"
         android:textSize="27sp"
         app:layout_constraintBottom_toTopOf="@id/emailEntry"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/signUpProgressBar" />
 
     <EditText
         android:id="@+id/emailEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/enter_your_e_mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/signupPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupTitle"
+        app:layout_constraintBottom_toTopOf="@id/signupPassword"/>
 
     <EditText
         android:id="@+id/signupPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="@string/enter_your_password_hint"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/signUpPasswordConfirm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.50"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEntry"
+        app:layout_constraintBottom_toTopOf="@id/signUpPasswordConfirm"/>
 
     <EditText
         android:id="@+id/signUpPasswordConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/re_enter_your_password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@id/registerUser"
+        app:layout_constraintBottom_toTopOf="@+id/hideEmail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpPasswordConfirm" />
+        app:layout_constraintTop_toBottomOf="@+id/signupPassword"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/registerUser"
         android:layout_width="360dp"
         android:layout_height="43dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginBottom="28dp"
         android:background="@color/menuButtonColor"
-        android:text="@string/register_user"
         android:onClick="onClickRegisterUser"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/register_user"
+        app:layout_constraintTop_toBottomOf="@id/newsletter"
+        app:layout_constraintBottom_toTopOf="@+id/alreadymemberlogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpPasswordConfirm" />
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/alreadymemberlogin"
         android:layout_width="wrap_content"
         android:layout_height="26sp"
-        android:layout_marginTop="12dp"
         android:fontFamily="@font/open_sans"
         android:text="@string/already_a_member"
         android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/registerUser"
+        app:layout_constraintBottom_toTopOf="@id/alreadymemberlogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerUser" />
+        tools:layout_editor_absoluteY="531dp" />
 
     <Button
         android:id="@+id/signinbutton"
@@ -92,25 +101,53 @@
         android:layout_height="30dp"
         android:background="#fff"
         android:fontFamily="@font/open_sans"
+        android:onClick="onClickSignUpToLogIn"
         android:text="@string/title_activity_login"
         android:textColor="@color/menuButtonColor"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alreadymemberlogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/alreadymemberlogin"
-        app:layout_constraintVertical_bias="0.0"
-        android:onClick="onClickSignUpToLogIn"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteY="618dp" />
 
     <ProgressBar
         android:id="@+id/signUpProgressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintBottom_toTopOf="@+id/signupTitle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/hideEmail"
+        android:layout_width="168sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/hide_e_mail"
+        app:layout_constraintBottom_toTopOf="@id/newsletter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPasswordConfirm" />
+
+    <CheckBox
+        android:id="@+id/newsletter"
+        android:layout_width="168sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/get_the_newsletter"
+        app:layout_constraintBottom_toTopOf="@+id/registerUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hideEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
