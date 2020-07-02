@@ -25,7 +25,15 @@ public class Model implements API
     @Override
     public void registerUser(String username, String email, String password, boolean emailHidden, boolean newsLetter)
     {
+        //TODO: Create a JSON Object
 
+        //TODO: Check if any of the values are null or in anyway lacking.
+
+        //TODO: Send the JSON Object to the URL
+
+        //TODO: Look at the Volume
+
+        //TODO: Let the user know that user has been accepted.
 
 
     }

@@ -8,10 +8,13 @@ import org.junit.runner.RunWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Model Tests")
 class ModelTest {
 
     @BeforeEach
-    void setUp() {
+    void setUp()
+    {
+
     }
 
     @AfterEach
@@ -19,18 +22,29 @@ class ModelTest {
     }
 
     @Test
+    @DisplayName("The user cannot have an empty username")
+    void emptyUsername()
+    {
+
+
+    }
+
+    @Test
+    @DisplayName("The User cannot have an empty e-mail")
     void emptyEmail()
     {
 
     }
 
     @Test
+    @DisplayName("The User cannot have an empty password")
     void emptyPassword()
     {
 
     }
 
     @Test
+    @DisplayName("The User cannot have an empty confirmation password")
     void didNotEnterPasswordConfirmation()
     {
 
