@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.coshopcode.coshopapp.data.Model;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -50,6 +51,8 @@ public class SignUpActivity extends AppCompatActivity
         {
             Toast.makeText(this, "The password and the confirmation do not match!", Toast.LENGTH_LONG);
         }
+
+        //Model model = new Model();
 
 
 
