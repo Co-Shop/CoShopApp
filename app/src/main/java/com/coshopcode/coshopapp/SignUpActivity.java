@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -22,8 +23,10 @@ public class SignUpActivity extends AppCompatActivity
     EditText emailText = findViewById(R.id.emailEntry);
     EditText signUpPasswordText = findViewById(R.id.signupPassword);
     EditText signUpConfirmPasswordText = findViewById(R.id.signUpPasswordConfirm);
+    CheckBox hideEmail = findViewById(R.id.hideEmail);
+    CheckBox newsletter = findViewById(R.id.newsletter);
     ProgressBar progressBar = findViewById(R.id.signUpProgressBar);
-    String URL = "";
+    String URL = "http://api.coshop.org/";
 
 
     @Override
@@ -47,6 +50,8 @@ public class SignUpActivity extends AppCompatActivity
         final String email = emailText.getText().toString();
         final String password = signUpPasswordText.getText().toString();
         final String confirmPassword = signUpConfirmPasswordText.getText().toString();
+        final boolean hideEmailChecked = hideEmail.isChecked();
+        final boolean newsLetterChecked = newsletter.isChecked();
         if(!password.equals(confirmPassword))
         {
             Toast.makeText(this, "The password and the confirmation do not match!", Toast.LENGTH_LONG);
