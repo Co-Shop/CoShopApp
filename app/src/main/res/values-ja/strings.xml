@@ -25,6 +25,7 @@
     <string name="donthaveaccount">アカウントお持ちではない方</string>
     <string name="totheregisterpage">登録</string>
     <string name="loginpagetitle">ログイン面</string>
-    <string name="hide_e_mail">Hide E-Mail?</string>
-    <string name="get_the_newsletter">Get the Newsletter.</string>
+    <string name="hide_e_mail">メールを隠れる</string>
+    <string name="get_the_newsletter">ニュースレターを受け取る</string>
+    <string name="enter_your_username">ユーザ名を入力してください</string>
 </resources>
