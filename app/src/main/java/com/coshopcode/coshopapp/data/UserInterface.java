@@ -1,6 +1,6 @@
 package com.coshopcode.coshopapp.data;
 
-public interface API
+public interface UserInterface
 {
     void registerUser(String username, String email, String password, boolean emailHidden, boolean newsLetter);
 

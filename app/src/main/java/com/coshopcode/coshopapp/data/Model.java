@@ -5,11 +5,8 @@ import android.app.Application;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 
-
-public class Model implements API
+public class Model implements UserInterface
 {
     public static final String BASE_URL = "http://api.coshop.org/";
 
