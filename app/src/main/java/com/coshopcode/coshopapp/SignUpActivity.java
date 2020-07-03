@@ -1,9 +1,16 @@
 package com.coshopcode.coshopapp;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
+import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -11,21 +18,20 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.coshopcode.coshopapp.data.Model;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
+import com.coshopcode.coshopapp.data.User;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUpActivity extends AppCompatActivity
 {
     private FirebaseAuth mFirebaseAuth;
+    EditText userNameText = findViewById(R.id.username);
     EditText emailText = findViewById(R.id.emailEntry);
     EditText signUpPasswordText = findViewById(R.id.signupPassword);
     EditText signUpConfirmPasswordText = findViewById(R.id.signUpPasswordConfirm);
     CheckBox hideEmail = findViewById(R.id.hideEmail);
     CheckBox newsletter = findViewById(R.id.newsletter);
     ProgressBar progressBar = findViewById(R.id.signUpProgressBar);
+    ConnectivityManager connectivityManager;
     String URL = "http://api.coshop.org/";
 
 
@@ -44,24 +50,33 @@ public class SignUpActivity extends AppCompatActivity
 
     }
 
+
     public void onClickRegisterUser(View view)
     {
-        progressBar.setVisibility(View.VISIBLE);
-        final String email = emailText.getText().toString();
-        final String password = signUpPasswordText.getText().toString();
-        final String confirmPassword = signUpConfirmPasswordText.getText().toString();
-        final boolean hideEmailChecked = hideEmail.isChecked();
-        final boolean newsLetterChecked = newsletter.isChecked();
-        if(!password.equals(confirmPassword))
+        if(isConnected())
         {
-            Toast.makeText(this, "The password and the confirmation do not match!", Toast.LENGTH_LONG);
+            //User user = new User();
         }
 
-        //Model model = new Model();
+
+
+
+
+        //User model = new User();
 
 
 
 
 
     }
+
+    private boolean isConnected()
+    {
+        connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkCapabilities isConnectedToInternet = connectivityManager.getNetworkCapabilities(Network.fromNetworkHandle(NetworkCapabilities.NET_CAPABILITY_INTERNET));
+        return isConnectedToInternet.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET);
+    }
+
+
+
 }

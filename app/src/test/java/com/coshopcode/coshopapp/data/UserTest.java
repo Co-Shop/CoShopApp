@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Model Tests")
-class ModelTest {
+@DisplayName("User Tests")
+class UserTest {
 
     @BeforeEach
     void setUp()
