@@ -32,7 +32,8 @@
         app:layout_constraintBottom_toTopOf="@+id/emailEntry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/signupTitle"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/emailEntry"
@@ -156,7 +157,41 @@
         app:layout_constraintTop_toBottomOf="@+id/hideEmail"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/usernameCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/that_username_already_exists"
+        android:visibility="invisible"
+        android:textColor="@color/errorColor"
+        app:layout_constraintBottom_toTopOf="@+id/emailEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
+    <TextView
+        android:id="@+id/emailCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/that_email_already_exists"
+        android:visibility="invisible"
+        android:textColor="@color/errorColor"
+        app:layout_constraintBottom_toTopOf="@+id/signupPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEntry" />
+
+    <TextView
+        android:id="@+id/passwordCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_passwords_need_to_match"
+        android:textColor="@color/errorColor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/signUpPasswordConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupPassword" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,4 +28,7 @@
     <string name="hide_e_mail">メールを隠れる</string>
     <string name="get_the_newsletter">ニュースレターを受け取る</string>
     <string name="enter_your_username">ユーザ名を入力してください</string>
+    <string name="that_username_already_exists">That Username already exists</string>
+    <string name="that_email_already_exists">That Email already exists</string>
+    <string name="the_passwords_need_to_match">The passwords need to match</string>
 </resources>

@@ -21,6 +21,8 @@ import android.widget.Toast;
 import com.coshopcode.coshopapp.data.User;
 import com.google.firebase.auth.FirebaseAuth;
 
+import org.json.JSONException;
+
 public class SignUpActivity extends AppCompatActivity
 {
     private FirebaseAuth mFirebaseAuth;
@@ -28,8 +30,8 @@ public class SignUpActivity extends AppCompatActivity
     EditText emailText = findViewById(R.id.emailEntry);
     EditText signUpPasswordText = findViewById(R.id.signupPassword);
     EditText signUpConfirmPasswordText = findViewById(R.id.signUpPasswordConfirm);
-    CheckBox hideEmail = findViewById(R.id.hideEmail);
-    CheckBox newsletter = findViewById(R.id.newsletter);
+    CheckBox hideEmailCheckBox = findViewById(R.id.hideEmail);
+    CheckBox newsletterCheckBox = findViewById(R.id.newsletter);
     ProgressBar progressBar = findViewById(R.id.signUpProgressBar);
     ConnectivityManager connectivityManager;
     String URL = "http://api.coshop.org/";
@@ -45,17 +47,25 @@ public class SignUpActivity extends AppCompatActivity
 
     public void onClickSignUpToLogIn(View view)
     {
+
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
 
     }
 
 
-    public void onClickRegisterUser(View view)
-    {
+    public void onClickRegisterUser(View view) throws JSONException {
         if(isConnected())
         {
-            //User user = new User();
+            String userName = userNameText.getText().toString();
+            String email = emailText.getText().toString();
+            String password = signUpPasswordText.getText().toString();
+            String confirmPassword = signUpConfirmPasswordText.getText().toString();
+            boolean hideEmail = hideEmailCheckBox.isChecked();
+            boolean newsletter = newsletterCheckBox.isChecked();
+
+            User user = new User(SignUpActivity.this.getApplication());
+            user.registerUser(userName, email, password, hideEmail, newsletter);
         }
 
 

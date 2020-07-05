@@ -32,4 +32,7 @@
     <string name="hide_e_mail">Hide E-Mail?</string>
     <string name="get_the_newsletter">Get the Newsletter.</string>
     <string name="enter_your_username">Enter your UserName</string>
+    <string name="that_username_already_exists">That Username already exists</string>
+    <string name="that_email_already_exists">That Email already exists</string>
+    <string name="the_passwords_need_to_match">The passwords need to match</string>
 </resources>
