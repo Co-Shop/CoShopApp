@@ -28,7 +28,8 @@
     <string name="hide_e_mail">Escondar su E-Mail</string>
     <string name="get_the_newsletter">Activar de Boletiens de Email</string>
     <string name="enter_your_username">Ingresa su nobre de usario</string>
-    <string name="that_username_already_exists">That Username already exists</string>
-    <string name="that_email_already_exists">That Email already exists</string>
-    <string name="the_passwords_need_to_match">The passwords need to match</string>
+    <string name="that_username_already_exists">Este nombre de usuario ya se utilizo. Debes elegir otro.</string>
+    <string name="that_email_already_exists">Este E-Mail ya se utilizo. Debes elegir otro.</string>
+    <string name="error_trying_to_register">Error trying to register.</string>
+    <string name="the_passwords_need_to_match">Las contraseñas necesitan coincidir</string>
 </resources>

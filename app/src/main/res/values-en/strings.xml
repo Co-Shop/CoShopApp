@@ -31,4 +31,5 @@
     <string name="that_username_already_exists">That Username already exists</string>
     <string name="that_email_already_exists">That Email already exists</string>
     <string name="the_passwords_need_to_match">The passwords need to match</string>
+    <string name="error_trying_to_register">Error trying to register.</string>
 </resources>
