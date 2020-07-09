@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.coshopcode.coshopapp.data.User;
@@ -34,7 +35,10 @@ public class SignUpActivity extends AppCompatActivity
     CheckBox newsletterCheckBox = findViewById(R.id.newsletter);
     ProgressBar progressBar = findViewById(R.id.signUpProgressBar);
     ConnectivityManager connectivityManager;
-    String URL = "http://api.coshop.org/";
+    String baseURL = "http://api.coshop.org/";
+    TextView PasswordsDontMatch = findViewById(R.id.passwordCheck);
+    TextView UsernameExists = findViewById(R.id.usernameCheck);
+    TextView EmailExists = findViewById(R.id.emailCheck);
 
 
     @Override
@@ -55,18 +59,26 @@ public class SignUpActivity extends AppCompatActivity
 
 
     public void onClickRegisterUser(View view) throws JSONException {
+        String userName = userNameText.getText().toString();
+        String email = emailText.getText().toString();
+        String password = signUpPasswordText.getText().toString();
+        String confirmPassword = signUpConfirmPasswordText.getText().toString();
+        boolean hideEmail = hideEmailCheckBox.isChecked();
+        boolean newsletter = newsletterCheckBox.isChecked();
         if(isConnected())
         {
-            String userName = userNameText.getText().toString();
-            String email = emailText.getText().toString();
-            String password = signUpPasswordText.getText().toString();
-            String confirmPassword = signUpConfirmPasswordText.getText().toString();
-            boolean hideEmail = hideEmailCheckBox.isChecked();
-            boolean newsletter = newsletterCheckBox.isChecked();
+            if(!password.equals(confirmPassword))
+            {
+                PasswordsDontMatch.setVisibility(View.VISIBLE);
+                return;
+            }
+
 
             User user = new User(SignUpActivity.this.getApplication());
             user.registerUser(userName, email, password, hideEmail, newsletter);
         }
+
+
 
 
 
@@ -79,6 +91,17 @@ public class SignUpActivity extends AppCompatActivity
 
 
     }
+
+    public boolean checkIfUserNameExists()
+    {
+        String URL = baseURL += "/users/";
+
+
+        
+
+        return false;
+    }
+
 
     private boolean isConnected()
     {

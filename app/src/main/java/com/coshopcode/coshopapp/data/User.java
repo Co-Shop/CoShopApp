@@ -3,6 +3,7 @@ package com.coshopcode.coshopapp.data;
 import android.app.Application;
 
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
@@ -15,6 +16,7 @@ public class User implements UserInterface
 
     private RequestQueue mRequestQueue;
     private Application mApplication;
+    private String BaseURL = "http://api.coshop.org/";
 
     public User(Application application)
     {
@@ -23,17 +25,36 @@ public class User implements UserInterface
     }
 
     @Override
-    public void registerUser(String username, String email, String password, boolean emailHidden, boolean newsLetter) throws JSONException {
+    public void registerUser(String username, String email, String password, boolean emailHidden, boolean newsLetter)
+    {
+        String URL = BASE_URL + "/auth/register";
+        JSONObject jsonObject = new JSONObject();
+
+        try
+        {
+
+            jsonObject.put("Username", username);
+            jsonObject.put("Email", email);
+            jsonObject.put("Password", password);
+            jsonObject.put("EmailHidden", emailHidden);
+            jsonObject.put("Newsletter", newsLetter);
+            Response.Listener<JSONObject> successListener = new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response)
+                {
+
+
+                }
+            };
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         //TODO: Create a JSON Object
 
 
         //Creating the JSON Object based on the API Specifications.
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("Username", username);
-        jsonObject.put("Email", email);
-        jsonObject.put("Password", password);
-        jsonObject.put("EmailHidden", emailHidden);
-        jsonObject.put("Newsletter", newsLetter);
+
 
 
         //TODO: Check if any of the values are null or in anyway lacking.
