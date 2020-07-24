@@ -57,10 +57,14 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     //testImplementation 'org.junit.jupiter:junit-jupiter'
 
+    //RetroFit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+
 
     //JUnit5 Implementation
     // (Required) Writing and executing Unit Tests on the JUnit Platform
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.6.2"
+    androidTestImplementation 'org.testng:testng:6.9.6'
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.6.2"
 
     // (Optional) If you need "Parameterized Tests"

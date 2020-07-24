@@ -1,5 +1,7 @@
 package com.coshopcode.coshopapp.data;
 
+import com.coshopcode.coshopapp.SignUpActivity;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -25,7 +27,7 @@ class UserTest {
     @DisplayName("The user cannot have an empty username")
     void emptyUsername()
     {
-
+        //User user = new User(UserTest.this.getApplication());
 
     }
 

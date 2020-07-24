@@ -65,6 +65,10 @@ public class SignUpActivity extends AppCompatActivity
         String confirmPassword = signUpConfirmPasswordText.getText().toString();
         boolean hideEmail = hideEmailCheckBox.isChecked();
         boolean newsletter = newsletterCheckBox.isChecked();
+
+        checkPasswordLength(password);
+
+
         if(isConnected())
         {
             if(!password.equals(confirmPassword))
@@ -108,6 +112,15 @@ public class SignUpActivity extends AppCompatActivity
         connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkCapabilities isConnectedToInternet = connectivityManager.getNetworkCapabilities(Network.fromNetworkHandle(NetworkCapabilities.NET_CAPABILITY_INTERNET));
         return isConnectedToInternet.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET);
+    }
+
+    private void checkPasswordLength(String password)
+    {
+        if(password.length() < 8)
+        {
+            signUpPasswordText.setError("The password is less than character");
+        }
+
     }
 
 
